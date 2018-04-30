@@ -1,0 +1,119 @@
+{
+	"info": {
+		"name": "PWA",
+		"_postman_id": "8b1f34c5-689a-4453-128d-0492f5ba68d4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://fcm.googleapis.com/fcm/send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "key=AAAAf_9kEVI:APA91bEL9pl_3zVUmq8wiGU4ZY2yjjlA6olNJdOILbNQ3pr0gEgDwff5burKlsVFBJ5dVlq8GhXEs0GqTrRQlX6QHELqBCbr_E41D2m5bIS3ojiOvmmIMLi4GIdZEUBIxvCP_YmO1JKG"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"registration_ids\": [\"dhv1KsImdxU:APA91bHWPgXQVsDnsm3JFdYZv4Klu__UqTU7hGrTI_HDHBhT4qv_4h0osIdSGV1NOe7_1ejk82KJBUpoAH9M5IMQWBlciDb-J1qTBtdaBn9D1teNDbjAoJ4dUoQDLh2beIVlOqNHT-xU\"],\n\t\"notification\": {\n\t\t\"Title\": \"Minha primeira push notification com PWA\",\n\t\t\"body\": \"Notificação a partir do Firebase\",\n\t\t\"click_action\": \"https://schoolofnet.com\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://iid.googleapis.com/iid/v1/dhv1KsImdxU:APA91bHWPgXQVsDnsm3JFdYZv4Klu__UqTU7hGrTI_HDHBhT4qv_4h0osIdSGV1NOe7_1ejk82KJBUpoAH9M5IMQWBlciDb-J1qTBtdaBn9D1teNDbjAoJ4dUoQDLh2beIVlOqNHT-xU/rel/topics/novo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "key=AAAAf_9kEVI:APA91bEL9pl_3zVUmq8wiGU4ZY2yjjlA6olNJdOILbNQ3pr0gEgDwff5burKlsVFBJ5dVlq8GhXEs0GqTrRQlX6QHELqBCbr_E41D2m5bIS3ojiOvmmIMLi4GIdZEUBIxvCP_YmO1JKG"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://iid.googleapis.com/iid/v1/dhv1KsImdxU:APA91bHWPgXQVsDnsm3JFdYZv4Klu__UqTU7hGrTI_HDHBhT4qv_4h0osIdSGV1NOe7_1ejk82KJBUpoAH9M5IMQWBlciDb-J1qTBtdaBn9D1teNDbjAoJ4dUoQDLh2beIVlOqNHT-xU/rel/topics/novo",
+					"protocol": "https",
+					"host": [
+						"iid",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"iid",
+						"v1",
+						"dhv1KsImdxU:APA91bHWPgXQVsDnsm3JFdYZv4Klu__UqTU7hGrTI_HDHBhT4qv_4h0osIdSGV1NOe7_1ejk82KJBUpoAH9M5IMQWBlciDb-J1qTBtdaBn9D1teNDbjAoJ4dUoQDLh2beIVlOqNHT-xU",
+						"rel",
+						"topics",
+						"novo"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://fcm.googleapis.com/fcm/send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAf_9kEVI:APA91bEL9pl_3zVUmq8wiGU4ZY2yjjlA6olNJdOILbNQ3pr0gEgDwff5burKlsVFBJ5dVlq8GhXEs0GqTrRQlX6QHELqBCbr_E41D2m5bIS3ojiOvmmIMLi4GIdZEUBIxvCP_YmO1JKG"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"to\": \"/topics/novo\",\n\t\"notification\": {\n\t\t\"Title\": \"Minha primeira push notification com PWA\",\n\t\t\"body\": \"Notificação a partir do Firebase\",\n\t\t\"click_action\": \"https://schoolofnet.com\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
